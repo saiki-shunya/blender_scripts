@@ -1,8 +1,8 @@
-# Camera Distance
+# Camera Tilt
 
 ### What does this tool do?
-This tool allows the measurement distance between the camera and an empty that you have placed.
-It measures distance, height, tilt.
+This tool measures the camera tilt, referencing the horizon.
+This is great to use with the `camera_distance` script.
 
 ### How to use?
 1. Change the variable on the `CAM_NAME` with camera.
