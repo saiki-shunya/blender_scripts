@@ -1,5 +1,5 @@
 # ───────────────── Tilt HUD (up-positive) — Bottom-Right ────────────────
-# Shows in any 3D View. Up (+) matches DJI gimbal pitch.
+# Shows in any 3D View. Up (+) means tilting above the horizon.
 import bpy, math, blf
 from mathutils import Vector
 
@@ -33,7 +33,7 @@ def _draw_tilt_hud():
         return
 
     tilt = _tilt_up_deg(cam)
-    txt = f"Tilt (up +): {tilt:+.1f}°   |   DJI gimbal pitch: {tilt:+.1f}°"
+    txt = f"Tilt (up +): {tilt:+.1f}°"
 
     region = bpy.context.region
     if not region:
@@ -63,7 +63,7 @@ def _toggle():
             _draw_tilt_hud, (), 'WINDOW', 'POST_PIXEL'
         )
         bpy.types.Scene._TILT_HUD_HANDLE = _TILT_HUD_HANDLE
-        print("Tilt HUD: ON (bottom-right, up +; matches DJI)")
+        print("Tilt HUD: ON (bottom-right, up +)")
 
 _toggle()
 # ─────────────────────────────────────────────────────────────────────────
