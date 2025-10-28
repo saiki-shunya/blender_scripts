@@ -7,6 +7,7 @@ It measures distance, height, tilt.
 ### How to use?
 1. Change the variable on the `CAM_NAME` with camera.
 2. Change the variable on the `FLOOR_POINT_NAME` with the empty that you have placed.
+3. See results in either `Toggle System Console` or the sidebar in Item -> Properties
 
 
 ### Language
